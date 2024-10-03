@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Participant {
@@ -8,6 +9,7 @@ public class Participant {
     public Participant(String name, String email) {
         this.name = name;
         this.email = email;
+        this.tricounts = new ArrayList<>()
     }
 
     public String getName() {
@@ -26,4 +28,15 @@ public class Participant {
         this.tricounts = tricounts;
     }
 
+    public void addTricount(Tricount tricount) {
+        this.tricounts.add(tricount);
+    }
+
+    public void removeTricount(Tricount tricount) {
+        this.tricounts.remove(tricount);
+    }
+
+    public String toString() {
+        return name + " " + email + " " + tricounts;
+    }
 }
