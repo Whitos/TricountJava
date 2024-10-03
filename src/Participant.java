@@ -14,4 +14,6 @@ public class Participant {
     public String getEmail() {
         return email;
     }
+
+    
 }
