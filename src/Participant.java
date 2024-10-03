@@ -9,7 +9,7 @@ public class Participant {
     public Participant(String name, String email) {
         this.name = name;
         this.email = email;
-        this.tricounts = new ArrayList<>()
+        this.tricounts = new ArrayList<>();
     }
 
     public String getName() {
@@ -37,6 +37,6 @@ public class Participant {
     }
 
     public String toString() {
-        return name + " " + email + " " + tricounts;
+        return "Participant: " + name + ", " + "email: " + email;
     }
 }
