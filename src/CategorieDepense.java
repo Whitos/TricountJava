@@ -1,11 +1,23 @@
-public class CategorieDepense {
-    private String nom;
+public enum CategorieDepense {
+    LOGEMENT("Logement"),
+    DIVERTISSEMENT("Divertissement"),
+    ALIMENTATION("Alimentation"),
+    LOYER_CHARGES("Loyer & charges"),
+    SHOPPING("Shopping"),
+    TRANSPORT("Transport");
 
-    public CategorieDepense(String nom) {
+    private final String nom;
+
+    CategorieDepense(String nom) {
         this.nom = nom;
     }
 
     public String getNom() {
         return nom;
-    }  
+    }
+
+    @Override
+    public String toString() {
+        return nom;
+    }
 }
